@@ -1,0 +1,103 @@
+section {
+  max-width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section h2 {
+  font-size: 43px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+section .section-desc {
+  max-width: 656px;
+  margin-top: 20px;
+}
+section .section-desc p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+section .section-content {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 60px;
+}
+section .section-content-1 {
+  max-width: 262;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+section .section-content-1 h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+section .section-content-1 p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+section .section-img {
+  width: 100%;
+  height: 173px;
+  margin-bottom: 20px;
+}
+section .section-img img {
+  width: 100%;
+  height: 100%;
+}
+section .section-icon {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+section .section-icon div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+section .section-icon .section-iconL {
+  color: #FC1200;
+}
+section .section-icon .section-iconR {
+  color: #FFC700;
+}
+section .section-foot {
+  width: 331px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+section .section-foot hr {
+  width: 75px;
+  height: 5px;
+  background-color: #C9453B;
+  border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .section-content {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=section.css.map */

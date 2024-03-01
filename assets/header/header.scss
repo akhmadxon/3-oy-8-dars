@@ -1,55 +1,75 @@
 @import url(./navbar/navbar.css);
 
-
 header{
     width: 100%;
     min-height: 100vh;
-    background-image: url(../../img/bg.jpg);
+    background-image: url(./../../img/bg.jpg);
     background-size: cover;
-    background-position:  center;
+    background-position: center;
     background-repeat: no-repeat;
-
-    .header_desc{
-    padding: 160px 200px 160px 0px;
-    color:#fff;
-
-    .nav_menu{
-        display: none;
-        
-    } 
-
-    
-    .btn{
-        padding: 14px 30px;
-        background-color: #C9453B;
-        border:none;
-        color:#fff;
-        border-radius: 8px;
-
+    main{
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        display: flex;
+        align-items: center;
     }
-
-    h2{
-        width: 800px;
-
-        font-size: 56px;
+    .header-main_desc{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h2{
+            font-size: 65px;
+            line-height: 78px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 28px;
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
     }
-
-    p{
-        padding: 30px 0px 30px 0px;
-        width: 458px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-
-    }
-
+    .header-main_rec{
+        max-width: 458px;
     }
 }
-
-@media (max-width:860px) {
-
+@media (max-width: 900px) {
     header{
-        background-position:right;
+        background-position: right;
+        .header-main_desc{
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h2{
+                font-size: 50px;
+                line-height: 55px;
+                color: #fff;
+            }
+           
+        }
     }
-    
+}
+@media (max-width: 556px) {
+    header{
+        background-position: right;
+        .header-main_desc{
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h2{
+                font-size: 35px;
+                line-height: 40px;
+                color: #fff;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+           
+        }
+    }
 }

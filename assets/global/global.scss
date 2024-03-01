@@ -1,8 +1,5 @@
-@import url(../footer/footer.css);
-@import url(../header/header.css);
+@import url(../header/head.css);
 @import url(../main/main.css);
-
-
 *{
     margin: 0;
     padding: 0;
@@ -10,41 +7,57 @@
     list-style: none;
     text-decoration: none;
     font-family: sans-serif;
-
 }
-
+$bg_color: #C9453B;
+%global-btn{
+    background-color: $bg_color;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@mixin change-btn ($p) {
+    padding: $p;
+}
 .container{
     padding-left: 215px;
     padding-right: 215px;
-
+    .global_btn1{
+        @extend %global-btn;
+        @include change-btn(14px 36px)
+    }
+    .global_btn2{
+        @extend %global-btn;
+        @include change-btn(18px 46px)
+    }
 }
-
-@media (max-width:1200px) {
-
+@media (max-width: 1200px) {
     .container{
         padding-left: 100px;
-        padding-right: 50px;
-
+        padding-right: 100px;
     }
-    
 }
-
-
-@media (max-width:950px) {
-
+@media (max-width: 1000px) {
     .container{
-        padding-left: 50px;
-        padding-right: 50px;
-
+        padding-left: 60px;
+        padding-right: 60px;
     }
-    
 }
-
-
-@media (max-width:860px) {
-
-    .btn{
-        display: none;
+@media (max-width: 900px) {
+    .container{
+        .global_btn1{
+            display: none;
+        }
     }
-    
+}
+@media (max-width: 768px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+        .global_btn1{
+            display: none;
+        }
+    }
 }
